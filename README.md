@@ -24,3 +24,4 @@ Contributions are welcome! If you have suggestions for new projects or improveme
 ---
 ### **_Join me on this exciting journey to JavaScript mastery!_**
 ---
+<div align='center'><a href='https://www.websitecounterfree.com'><img src='https://www.websitecounterfree.com/c.php?d=9&id=54724&s=1' border='0' alt='Free Website Counter'></a></div>
