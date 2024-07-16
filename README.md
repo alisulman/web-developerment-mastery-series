@@ -15,9 +15,9 @@ Each project will have its own folder with a README file explaining the project'
 ###  Cloning Specific Folders(projects)
 To download a specific folder from this repository, you can use the `gitzip.org` Google Chrome extension:
 
-- Install the [gitzip.org extension](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn).
-- Navigate to the folder in this repository that you want to download.
-- Check the folder and use the extension to download only that folder.
+1. Install the [gitzip.org extension](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn).
+2. Navigate to the folder in this repository that you want to download.
+3. Check the folder and use the extension to download only that folder.
 ### Contributions
 Contributions are welcome! If you have suggestions for new projects or improvements to existing ones, please feel free to open an issue or submit a pull request.
 
