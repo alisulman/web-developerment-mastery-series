@@ -70,16 +70,14 @@ export const Clear = (setInp) => async (dispatch) => {
   dispatch(setStatus(""));
   dispatch(setHistory([]));
   setInp("");
+  dispatch(setClickCount(0));
 };
 
-export const Backspace = (expression, setInp) => async () => {
-  const intoarray = expression.split("");
-  console.log(intoarray);
+export const Backspace = (inp, setInp) => async () => {
+  const str = inp.toString()
+  const intoarray = str.split("");
   const arraylength = intoarray.length;
-  console.log(arraylength);
-  const newarray = expression.slice(0, arraylength - 1);
-  console.log(newarray);
+  const newarray = str.slice(0, arraylength - 1);
   const intoString = newarray.toString();
-  console.log(intoString);
   setInp(intoString);
 };

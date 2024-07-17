@@ -54,23 +54,26 @@ function App() {
 
   useEffect(() => {
     if (count > 0) {
-      const regex = /(\d+|\+|-|\/|\*)/g;
+      const regex = /(\d+(\.\d+)?|\+|-|÷|×)/g;
       const value = history[0]?.match(regex);
-      console.log(value)
-      if (value?.length !== 0) {
-        const updateResult = eval(`${result} ${value[1]} ${value[2]}`);
-        setInp(updateResult)
-        setRes(updateResult)
-      }
+      let opr = ''
+      if (value[1] === '÷') opr = '/'
+      if (value[1] === '×') opr = '*'
+      const updateResult = eval(`${result} ${opr ? opr : value[1]} ${value[2]}`);
+      setInp(updateResult)
+      setRes(updateResult)
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [count])
   return (
     <>
       <div className="flex justify-center items-center w-svw h-svh bg-[#42444D] text-white">
         <div className="bg-black w-[360px] h-[640px] p-3">
           <div className="relative flex flex-col justify-end items-center gap-3 h-full">
-            <input type="text" id="input" value={inp} onChange={(e) => setInp(e.target.value)} className="absolute top-0 bg-transparent text-5xl text-end outline-none w-full mt-7 px-1 pt-20 caret-color_two" />
+            <div className="relative border border-white w-full h-full">
+              <input type="text" name="" className="absolute border-2 border-black z-10" />
+              <input type="text" id="input" value={inp} onChange={(e) => setInp(e.target.value)} className="absolute top-0 bg-transparen text-black text-5xl text-end outline-none w-full mt-3 px-1 pt-20 caret-color_two" />
+            </div>
             <div className="flex justify-between items-center w-full">
               <button type="button" value="mc" onClick={handleClick} className="btnPad bg-color_one not-italic">mc</button>
               <button type="button" value="m+" onClick={handleClick} className="btnPad bg-color_one not-italic">m+</button>
