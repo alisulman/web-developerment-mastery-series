@@ -11,6 +11,7 @@ import { useEffect } from "react";
 
 function App() {
   const [inp, setInp] = useState('')
+  const [res, setRes] = useState('')
 
   const state = useSelector(state => state.CALC)
   const status = state.status
@@ -19,6 +20,7 @@ function App() {
   const opr = state.matchOperators
   const result = state.result
   const history = state.history
+  const count = state.clickCount
 
   const ref_two = useRef(null)
   const ref_three = useRef(null)
@@ -40,18 +42,29 @@ function App() {
 
   const handleResult = () => {
     const inputValue = document.getElementById('input').value
-    dispatch(ParseExpression(inputValue, history))
+    dispatch(ParseExpression(inputValue, history, count, setInp))
   }
 
   useEffect(() => {
     if (status === 'go ahead') {
-      dispatch(Calculation(opr, num_one, num_two))
+      dispatch(Calculation(opr, num_one, num_two, count, setInp, res))
     }
-    if(result){
-      setInp(result)
-    }
-  }, [dispatch, num_one, num_two, opr, result, status]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [history, num_one, num_two, opr, status]);
 
+  useEffect(() => {
+    if (count > 0) {
+      const regex = /(\d+|\+|-|\/|\*)/g;
+      const value = history[0]?.match(regex);
+      console.log(value)
+      if (value?.length !== 0) {
+        const updateResult = eval(`${result} ${value[1]} ${value[2]}`);
+        setInp(updateResult)
+        setRes(updateResult)
+      }
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [count])
   return (
     <>
       <div className="flex justify-center items-center w-svw h-svh bg-[#42444D] text-white">

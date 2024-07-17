@@ -2,12 +2,12 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isLoading: false,
-  isError: "",
   matchNumbers: [],
   matchOperators: [],
-  result: '',
-  status: '',
-  history: []
+  result: "",
+  status: "",
+  history: [],
+  clickCount: 0,
 };
 
 const createReducer = createSlice({
@@ -16,10 +16,6 @@ const createReducer = createSlice({
   reducers: {
     setLoading(state) {
       state.isLoading = true;
-    },
-    setError(state, actions) {
-      state.isLoading = false;
-      state.isError = actions.payload;
     },
     setMatchNumbers(state, actions) {
       state.isLoading = false;
@@ -30,21 +26,33 @@ const createReducer = createSlice({
       state.matchOperators = actions.payload;
     },
     setResult(state, actions) {
-        state.isLoading = false
-        state.result = actions.payload
+      state.isLoading = false;
+      state.result = actions.payload;
     },
-    setStatus(state, actions){
-        state.isLoading = false
-        state.status = actions.payload
+    setStatus(state, actions) {
+      state.isLoading = false;
+      state.status = actions.payload;
     },
-    setHistory(state, actions){
-        state.isLoading = false
-        state.history = actions.payload
-    }
+    setClickCount(state, actions) {
+      state.isLoading = false;
+      state.clickCount = actions.payload;
+    },
+    setHistory(state, actions) {
+      state.isLoading = false;
+      state.history = actions.payload;
+    },
   },
 });
 
-export const { setLoading, setMatchNumbers, setMatchOperators, setError, setResult, setStatus, setHistory } =
-  createReducer.actions;
+export const {
+  setLoading,
+  setMatchNumbers,
+  setMatchOperators,
+  setError,
+  setResult,
+  setStatus,
+  setHistory,
+  setClickCount,
+} = createReducer.actions;
 
 export default createReducer.reducer;
