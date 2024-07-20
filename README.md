@@ -1,5 +1,5 @@
 ### Hi There 👋
-This is `**Ali Sulman**` a full stack developer.
+This is **`Ali Sulman`** a full stack developer.
 
 ![counter](https://komarev.com/ghpvc/?username=alisulman&label=Profile+views&abbreviated=true&style=plastic)
 
