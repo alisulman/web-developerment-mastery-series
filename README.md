@@ -19,7 +19,7 @@ Welcome to the Web Development Mastery Series! This series is designed to help y
 1. [Goals](#goals)
 1. [Project List](#project-list)
 1. [How to Get Started](#how-to-get-started)
-1. License
+1. [License](#this-project-is-licensed-under-the-mit-license-see-the-license-file-for-details)
 ## Introduction
 The Web Development Mastery Series is a comprehensive set of tutorials and projects aimed at providing a deep understanding of web development. Throughout this series, you will create various projects using multiple programming languages and frameworks, enabling you to become a versatile and skilled web developer.
 
