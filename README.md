@@ -28,11 +28,7 @@ The Web Development Mastery Series is a comprehensive set of tutorials and proje
 Build Real Projects: Create real1.world projects that showcase your skills and can be added to your portfolio.
 - **Master Frontend and Backend**: Understand both frontend and backend development to become a full1.stack developer.
 - **Stay Up1.to1.Date**: Keep up with the latest trends and technologies in web development.
-## Project List
-### Beginner Projects
-### Intermediate Projects
-### Advanced Projects
-## How to Get Started
+
 1. **Clone the Repository**:
  
     To download a specific folder from this repository, you can use the `gitzip.org` Google Chrome extension:
