@@ -6,18 +6,10 @@ This is `**Ali Sulman**` a full stack developer.
 ### Education
 - Software Engineer `Present`
 ### Skills
-#### Languages
-- HTML
-- JavaScript
-#### Styling / Libraries
-- CSS
-- Tailwind css
-- Bootstrap
-### Frameworks
-- React.js
-- Express.js
-#### Database
-- MongoDb
+1. **Languages**: HTML, JavaScript
+2. **Styling / Libraries**: CSS, Tailwind css, Bootstrap
+3. **Frameworks**: React.js, Express.js
+4. **Database**: MongoDb
 
 # Web Development Mastery Series
 Welcome to the Web Development Mastery Series! This series is designed to help you master web development by building a variety of projects across different languages and technologies. Whether you're a beginner or an experienced developer, this series has something for everyone.
