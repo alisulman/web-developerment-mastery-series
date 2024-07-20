@@ -35,7 +35,7 @@ Build Real Projects: Create real1.world projects that showcase your skills and c
 ## How to Get Started
 1. **Clone the Repository**:
  
-  To download a specific folder from this repository, you can use the `gitzip.org` Google Chrome extension:
+    To download a specific folder from this repository, you can use the `gitzip.org` Google Chrome extension:
   - Install the [gitzip.org extension](https://chromewebstore.google.com/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn).
   - Navigate to the folder in this repository that you want to download.
   - Check the folder and use the extension to download only that folder.
