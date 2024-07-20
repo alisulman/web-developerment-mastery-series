@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer components{
-    .btnPad{
-        @apply flex justify-center items-center font-poppins italic font-light bg-[#191919] w-[76px] h-[51px] rounded-[10px] text-[30px]
-    }
-}
