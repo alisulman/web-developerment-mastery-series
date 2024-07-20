@@ -41,10 +41,10 @@ Build Real Projects: Create real1.world projects that showcase your skills and c
     - Check the folder and use the extension to download only that folder.
 2. **Install Dependencies**:
 
-Navigate to the project directory and install the necessary dependencies using the package manager of your choice (e.g., npm install).
+    Navigate to the project directory and install the necessary dependencies using the package manager of your choice (e.g., npm install).
 
 3. **Start Building**:
 
-Follow the instructions for each project to start building and learning.
+    Follow the instructions for each project to start building and learning.
  
 ### *This project is licensed under the MIT License. See the LICENSE file for details.*
