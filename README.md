@@ -1,3 +1,6 @@
+### Hi There 👋
+This is Ali Sulman a full stack developer.
+![counter](https://komarev.com/ghpvc/?username=alisulman&label=Profile+views&abbreviated=true&style=plastic)
 # Web Development Mastery Series
 Welcome to the Web Development Mastery Series! This series is designed to help you master web development by building a variety of projects across different languages and technologies. Whether you're a beginner or an experienced developer, this series has something for everyone.
 
