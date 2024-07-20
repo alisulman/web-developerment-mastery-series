@@ -6,21 +6,19 @@ This is `**Ali Sulman**` a full stack developer.
 ### Education
 - Software Engineer `Present`
 ### Skills
-1. **Languages**: HTML, JavaScript
-2. **Styling / Libraries**: CSS, Tailwind css, Bootstrap
-3. **Frameworks**: React.js, Express.js
-4. **Database**: MongoDb
+- **Languages**: HTML, JavaScript
+- **Styling / Libraries**: CSS, Tailwind css, Bootstrap
+- **Frameworks**: React.js, Express.js
+- **Database**: MongoDb
 
 # Web Development Mastery Series
 Welcome to the Web Development Mastery Series! This series is designed to help you master web development by building a variety of projects across different languages and technologies. Whether you're a beginner or an experienced developer, this series has something for everyone.
 
 ## Table of Contents
-1. Introduction
-1. Goals
-1. Project List
-1. Technologies Covered
-1. How to Get Started
-1. Contributing
+1. [Introduction](#introduction)
+1. [Goals](#goals)
+1. [Project List](#project-list)
+1. [How to Get Started](#how-to-get-started)
 1. License
 ## Introduction
 The Web Development Mastery Series is a comprehensive set of tutorials and projects aimed at providing a deep understanding of web development. Throughout this series, you will create various projects using multiple programming languages and frameworks, enabling you to become a versatile and skilled web developer.
