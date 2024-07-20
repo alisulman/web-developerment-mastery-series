@@ -2,6 +2,7 @@
 This is *_`Ali Sulman`_* a full stack developer.
 
 ![counter](https://komarev.com/ghpvc/?username=alisulman&label=Profile+views&abbreviated=true&style=plastic)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Education
