@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Picker</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-slate-700 text-white overflow-hidden">
+        <div>
+            <h1
+                class="text-4xl text-center font-medium tracking-wider my-4">Project
+                Coloring</h1>
+            <div id="bg"
+                class="flex flex-col items-center justify-center border-2 border-white w-full my-40">
+                <div
+                    class="text-xl text-center tracking-wider bg-black py-2 h-fit w-full">BackGround
+                    Color</div>
+                <button type="button"
+                    class="border-2 border-white hover:bg-white hover:bg-opacity-15 active:bg-opacity-10 px-5 my-3 py-0.5"
+                    onclick="handleClick()">Click Me</button>
+            </div>
+        </div>
+        <!-- Color Picker -->
+        <div id="panal-container"
+            class="hidden absolute top-0 bottom-0 left-0 right-0 flex justify-between bg-slate-700 border-2 border-white rounded-3xl max-w-2xl h-96 shadow-black shadow-2xl m-auto p-5">
+            <div class="flex flex-col justify-between items-center">
+                <div class="relative size-72">
+                    <canvas id="color-picker-panal"
+                        class="border-2 border-white w-72 h-72 rounded-xl"></canvas>
+                    <div id="color-picker"
+                        class="absolute top-0.5 right-0.5 size-4 border-4 border-white rounded-full"></div>
+                </div>
+                <div class="relative flex gap-2">
+                    <h3 class="text-xl">#</h3>
+                    <input type="text" id="hex" value
+                        class="font-medium text-black bg-slate-400 outline-none px-5 py-1">
+                    <img src="./copy.png"
+                        class="absolute top-1 right-1 cursor-pointer size-6"
+                        alt>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <canvas id="color-spectrum"
+                    class="border-2 border-white w-10 h-72 mx-5"></canvas>
+                <div id="cursor-pointer"
+                    class="flex justify-between absolute top-0 w-[61px] -mt-0.5">
+                    <div
+                        class="border-y-[7px] border-y-transparent border-l-[10px] border-r-#fff"></div>
+                    <div
+                        class="border-y-[7px] border-y-transparent border-r-[10px] border-r-#fff"></div>
+                </div>
+            </div>
+            <div>
+                <div class="flex justify-center">
+                    <div id="preview" class="relative border w-14 h-20 mr-7">
+                    </div>
+                    <div class="flex flex-col gap-4">
+                        <button type="button"
+                            class="border-2 border-white hover:bg-white hover:bg-opacity-20 active:bg-opacity-10 rounded-full px-16 py-0.5" onclick="handleOk()">Ok</button>
+                        <button type="button"
+                            class="border-2 border-white hover:bg-white hover:bg-opacity-20 active:bg-opacity-10 rounded-full"
+                            onclick="handleCancel()">Cancel</button>
+                    </div>
+                </div>
+                <div class="flex justify-between my-5">
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="flex gap-2">
+                            <label class="text-xl">R</label>
+                            <input type="text" id="r" value
+                                class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20">
+                        </div>
+                        <div class="flex gap-2">
+                            <label class="text-xl">G</label>
+                            <input type="text" id="g" value
+                                class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20 mr-0.5">
+                        </div>
+                        <div class="flex gap-2">
+                            <label class="text-xl">B</label>
+                            <input type="text" id="b" value
+                                class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20">
+                        </div>
+                        <button type="button"
+                            class="bg-slate-400 cursor-copy text-black text-sm px-9">RGB</button>
+                    </div>
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="flex gap-2">
+                            <label class="text-xl">C</label>
+                            <input type="text" id="c" value
+                                class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20">
+                        </div>
+                        <div class="flex gap-2">
+                            <label class="text-xl">M</label>
+                            <input type="text" id="m" value
+                                class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20 mr-1.5">
+                        </div>
+                        <div class="flex gap-2">
+                            <label class="text-xl">Y</label>
+                            <input type="text" id="y" value
+                                class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20">
+                        </div>
+                        <div class="flex gap-2">
+                            <label class="text-xl">K</label>
+                            <input type="text" id="k" value
+                                class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20">
+                        </div>
+                        <button type="button"
+                            class="bg-slate-400 cursor-copy text-black text-sm px-8">CMYK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js"></script>
+        <script src="script.canvas.js"></script>
+    </body>
+</html>
