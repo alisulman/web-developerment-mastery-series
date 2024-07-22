@@ -3,11 +3,11 @@
 // Solution:
 
 const question_one_solution = (value_one, value_two) => {
-    return value_one + value_two
-}
+  return value_one + value_two;
+};
 
-const result_of_question_one = question_one_solution(10, 11)
-console.log(result_of_question_one) // output = 21
+const result_of_question_one = question_one_solution(10, 11);
+console.log("Q.1", result_of_question_one); // output = 21
 
 //------------------------------------------------------------------------
 
@@ -16,44 +16,135 @@ console.log(result_of_question_one) // output = 21
 // Solution:
 
 const question_two_solution = (input_string) => {
-    return input_string === input_string.split('').reverse().join('')
-}
+  return input_string === input_string.split("").reverse().join("");
+};
 
-const result_of_question_two = question_two_solution('madam')
-console.log(result_of_question_two) // output = true
+const result_of_question_two = question_two_solution("madam");
+console.log("Q.2", result_of_question_two); // output = true
 
 //------------------------------------------------------------------------
 
 // Q.3: Write a JavaScript program to find the largest of three given numbers.
 
 // Solution:
+
+const question_three_solution = (val) => {
+  const [val_1, val_2, val_3] = val;
+  return Math.max(val_1, val_2, val_3);
+};
+
+const result_of_question_three = question_three_solution([10, 15, 20]);
+console.log("Q.3", result_of_question_three); // output = 20
+
 //------------------------------------------------------------------------
+
 // Q.4: Create a function that takes an array of numbers and returns a new array with all elements doubled.
+
 // Solution:
+
+const question_four_solution = (array) => {
+  const newArray = array.map((val) => val * 2);
+  return newArray;
+};
+
+const result_of_question_four = question_four_solution([1, 2, 3, 4, 5]);
+console.log("Q.4", result_of_question_four); // [ 2, 4, 6, 8, 10 ]
+
 //------------------------------------------------------------------------
 
 // Q.5: Write a function to reverse a string in JavaScript.
+
 // Solution:
+
+const question_five_solution = (str) => {
+  return str.split("").reverse().join("");
+};
+const result_of_question_five = question_five_solution("Hello World");
+console.log("Q.5", result_of_question_five); // output = dlroW olleH
+
 //------------------------------------------------------------------------
 
 // Q.6: Write a JavaScript function that accepts a string and converts the first letter of each word to uppercase.
+
 // Solution:
+
+const question_six_solution = (str) => {
+  const acceptString = typeof str;
+  if (acceptString === "string") {
+    return str
+      .split(" ")
+      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(" ");
+  } else {
+    return "You parameter in not string";
+  }
+};
+const result_of_question_six = question_six_solution(
+  "hello javascript supporter"
+);
+console.log("Q.6", result_of_question_six); // output = Hello Javascript Supporter
+
 //------------------------------------------------------------------------
 
 // Q.7: Create a function that returns the length of the longest word in a given sentence.
+
 // Solution:
+
+const question_seven_solution = (str) => {
+  const length_of_string = str.split(" ").map((word) => word.split("").length);
+  return question_three_solution(length_of_string);
+};
+const result_of_question_seven = question_seven_solution(
+  "hello javascript supporter"
+);
+console.log(
+  "Q.3",
+  `the larger word's length is ${result_of_question_seven}  in sentence.`
+); // output = the larger word's length is 10  in sentence.
+
 //------------------------------------------------------------------------
 
 // Q.8: Write a JavaScript function that checks whether a passed string is an anagram of another string.
+
 // Solution:
+
+const question_eight_solution = (str_1, str_2) => {
+    const sortString = (str) => str.split('').sort().join('')
+    return sortString(str_1) === sortString(str_2)
+};
+
+const result_of_question_eight_one = question_eight_solution("listen", "silent");
+const result_of_question_eight_two = question_eight_solution("Hello", "world");
+const result_of_question_eight_three = question_eight_solution("123498", "892341");
+console.log('Q.8.1', result_of_question_eight_one) // output = true
+console.log('Q.8.2', result_of_question_eight_two) // output = false
+console.log('Q.8.3', result_of_question_eight_three) // output = true
+
 //------------------------------------------------------------------------
 
 // Q.9: Create a function that takes an array of numbers and returns the sum of all elements.
+
 // Solution:
+
+const question_nine_solution = (array) => {
+    const result = array.reduce((acc, curr) => acc + curr, 0)
+    return result
+}
+const result_of_question_nine = question_nine_solution([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 9])
+console.log('Q.9', result_of_question_nine) // output = 100
+
 //------------------------------------------------------------------------
 
 // Q.10: Write a JavaScript program to remove a specific item from an array.
+
 // Solution:
+
+const question_ten_solution = (array, rm_val) => {
+    return array.filter(val => rm_val !== val)
+}
+const result_of_question_ten = question_ten_solution([1, 2, 3, 4, 7, 8], 7)
+console.log('Q.10', result_of_question_ten) // output = [ 1, 2, 3, 4, 8]
+
 //------------------------------------------------------------------------
 
 // Q.11: Write a function that merges two arrays and removes all duplicates.
