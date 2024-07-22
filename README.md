@@ -27,8 +27,8 @@ The Web Development Mastery Series is a comprehensive set of tutorials and proje
 
 ## Goals
 - **Learn Multiple Languages**: Gain proficiency in HTML, CSS, JavaScript, Python, PHP, Ruby, and more.
-Build Real Projects: Create real1.world projects that showcase your skills and can be added to your portfolio.
-- **Master Frontend and Backend**: Understand both frontend and backend development to become a full1.stack developer.
+Build Real Projects: Create real world projects that showcase your skills and can be added to your portfolio.
+- **Master Frontend and Backend**: Understand both frontend and backend development to become a full stack developer.
 - **Stay Up1.to1.Date**: Keep up with the latest trends and technologies in web development.
 
 ## How to Get Started
