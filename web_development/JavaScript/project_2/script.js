@@ -80,9 +80,9 @@ const changeValue = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  const input = document.getElementById("input");
-  const button = document.querySelectorAll("#shadow");
-  button.forEach((button) => {
+    const input = document.getElementById("input");
+    const button = document.querySelectorAll('shadow')
+button.forEach(button => {
     button.addEventListener("click", () => {
       input.scrollLeft = input.scrollWidth;
       if (input.value.length > 11) {
@@ -95,4 +95,5 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(input.value.length);
     });
   });
-});
+
+})
