@@ -28,6 +28,6 @@ In a full-stack context, JavaScript is used for:
 Here are some examples of projects you can create using JavaScript in a full-stack environment:
 
 1. [Color Picking](/web_development/JavaScript/project_1)
-2. Calculator
+2. [Calculator](/web_development/JavaScript/project_2)
 
 By leveraging JavaScript across both the frontend and backend, you can create robust and efficient web applications that offer a seamless user experience.
