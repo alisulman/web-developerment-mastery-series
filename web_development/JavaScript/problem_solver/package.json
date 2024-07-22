@@ -1,0 +1,12 @@
+{
+  "name": "problem_solver",
+  "version": "1.0.0",
+  "description": "I want to strong grip in javascript so i sove the question for better skill.",
+  "main": "script.js",
+  "scripts": {
+    "start": "nodemon script.js"
+  },
+  "keywords": ["javascript", "problem solving"],
+  "author": "Ali Sulman",
+  "license": "ISC"
+}
