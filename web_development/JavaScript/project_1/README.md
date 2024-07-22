@@ -2,4 +2,4 @@
 
 ---
 
-[![preivew](https://github.com/user-attachments/assets/7e1b56e9-202f-4b0a-a215-ad9c535aec2e|width=100)](https://coloring-iota.vercel.app/)
+[![preivew](https://github.com/user-attachments/assets/c70b5776-0dcd-4a16-9899-9511ed333a8f)](https://coloring-iota.vercel.app/)
