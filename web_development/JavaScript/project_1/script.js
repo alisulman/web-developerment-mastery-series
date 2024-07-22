@@ -33,3 +33,26 @@ function determineColor(hex) {
     return undefined; // Return undefined if the color is neither white nor black
   }
 }
+
+const copy = document.getElementById("copy")
+copy.addEventListener("click", () => {
+  const texttoCopy = document.getElementById("hex").value
+  const text = `#${texttoCopy}`
+  navigator.clipboard.writeText(text)
+})
+
+function rgbClick(){
+  const r = document.getElementById("r").value
+  const g = document.getElementById("g").value
+  const b = document.getElementById("b").value
+  const text = `rgb(${r}, ${g}, ${b})`
+  navigator.clipboard.writeText(text)
+}
+function cmykClick(){
+  const c = document.getElementById("c").value
+  const m = document.getElementById("m").value
+  const y = document.getElementById("y").value
+  const k = document.getElementById("k").value
+  const text = `cmyk(${c}, ${m}, ${y}, ${k})`
+  navigator.clipboard.writeText(text)
+}

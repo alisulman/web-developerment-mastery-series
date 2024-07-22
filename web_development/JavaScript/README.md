@@ -23,11 +23,11 @@ In a full-stack context, JavaScript is used for:
   - **Node.js:** JavaScript runtime built on Chrome's V8 engine, allowing for server-side scripting.
   - **Express.js:** A minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
-### Project Examples
+### Project we make
 
 Here are some examples of projects you can create using JavaScript in a full-stack environment:
 
-1. Color Picking
+1. [Color Picking](https://coloring-iota.vercel.app/)
 2. Calculator
 
 By leveraging JavaScript across both the frontend and backend, you can create robust and efficient web applications that offer a seamless user experience.

@@ -35,7 +35,7 @@
                     <h3 class="text-xl">#</h3>
                     <input type="text" id="hex" value
                         class="font-medium text-black bg-slate-400 outline-none px-5 py-1">
-                    <img src="./copy.png"
+                    <img src="./copy.png" id="copy"
                         class="absolute top-1 right-1 cursor-pointer size-6"
                         alt>
                 </div>
@@ -81,7 +81,7 @@
                                 class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20">
                         </div>
                         <button type="button"
-                            class="bg-slate-400 cursor-copy text-black text-sm px-9">RGB</button>
+                            class="bg-slate-400 cursor-copy text-black text-sm px-9" onclick="rgbClick()">RGB</button>
                     </div>
                     <div class="flex flex-col items-center gap-3">
                         <div class="flex gap-2">
@@ -105,7 +105,7 @@
                                 class="font-medium text-black bg-slate-400 outline-none px-5 py-1 w-20">
                         </div>
                         <button type="button"
-                            class="bg-slate-400 cursor-copy text-black text-sm px-8">CMYK</button>
+                            class="bg-slate-400 cursor-copy text-black text-sm px-8" onclick="cmykClick()">CMYK</button>
                     </div>
                 </div>
             </div>
